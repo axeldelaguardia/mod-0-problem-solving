@@ -10,10 +10,15 @@
 # Then we will use .join on the array with a seperator in the parameter to combine all back into one string with spaces in between
 
 sentence = 'Turing is the best'
-array = sentence.split
-cap_array = []
-array.each do |word|
-    cap_array << word.capitalize
+
+def capitalize_first_letter(array)
+    array = array.split
+    cap_array = []
+    array.each do |word|
+        cap_array << word.capitalize
+    end
+    cap_array = cap_array.join(" ")
+    puts cap_array
 end
-cap_array = cap_array.join(" ")
-puts cap_array
+
+capitalize_first_letter(sentence)
