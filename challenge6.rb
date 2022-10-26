@@ -11,8 +11,8 @@
 
 sentence = 'Turing is the best'
 
-def capitalize_first_letter(array)
-    array = array.split
+def capitalize_first_letter(string)
+    string = string.split
     cap_array = []
     array.each do |word|
         cap_array << word.capitalize
